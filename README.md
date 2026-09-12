@@ -1,8 +1,8 @@
 # 🏦 Simple Banking System
 
-A simple **Banking System** built to simulate basic banking operations such as account creation, deposits, withdrawals, balance checking, and transaction management.
+A console-based **Banking System developed using Java** that simulates basic banking operations such as account creation, deposits, withdrawals, balance checking, and transaction management.
 
-The project focuses on implementing core programming concepts, object-oriented design, data handling, and basic banking logic in a simple and easy-to-understand application.
+The project demonstrates core **Java programming and Object-Oriented Programming (OOP)** concepts through a practical banking application.
 
 ## 🚀 Features
 
@@ -10,82 +10,92 @@ The project focuses on implementing core programming concepts, object-oriented d
 * 💰 Deposit money
 * 💸 Withdraw money
 * 📊 Check account balance
-* 🔄 Perform basic banking transactions
-* 🧾 View transaction details/history
-* 🔐 Basic account validation
-* ⚠️ Handles invalid inputs and insufficient balance
-* 🏦 Manage multiple customer accounts
+* 🧾 View transaction history
+* 🏦 Manage customer account details
+* ⚠️ Validate transactions and handle insufficient balance
+* 🔄 Perform multiple banking operations through a menu-driven interface
 
 ## 🛠️ Technologies Used
 
-* **Programming Language:** Python
-* **Concepts:** Object-Oriented Programming (OOP)
-* **Data Handling:** Python Data Structures
-* **Version Control:** Git & GitHub
+* **Java**
+* **Object-Oriented Programming (OOP)**
+* **Java Collections**
+* **Exception Handling**
+* **Git & GitHub**
 
 ## 📂 Project Structure
 
 ```text
 Simple-Banking-System/
 │
-├── main.py              # Main application
-├── bank.py              # Banking system logic
-├── account.py           # Account-related operations
-├── transactions.py      # Transaction handling
-├── README.md            # Project documentation
-└── requirements.txt     # Project dependencies
+├── src/
+│   ├── Main.java
+│   ├── Bank.java
+│   ├── Account.java
+│   └── Transaction.java
+│
+├── README.md
+└── .gitignore
 ```
 
-> The file structure may vary depending on the implementation.
+> The structure may vary depending on the implementation.
 
-## ⚙️ How It Works
+## ⚙️ Core Functionality
 
-The system allows users to create and manage bank accounts through a simple interface.
+### 👤 Account Creation
 
-### 1. Create Account
+Allows users to create a bank account and store basic account information.
 
-Users can create a bank account by providing the required customer information.
+### 💰 Deposit
 
-### 2. Deposit Money
+Users can deposit money into their account, and the account balance is updated accordingly.
 
-Users can add money to their account. The deposited amount is added to the current balance.
+### 💸 Withdrawal
 
-### 3. Withdraw Money
+Users can withdraw money from their account after checking whether sufficient balance is available.
 
-Users can withdraw money if sufficient funds are available in their account.
+### 📊 Balance Inquiry
 
-### 4. Check Balance
+Displays the current balance associated with a bank account.
 
-Users can view their current account balance at any time.
+### 🧾 Transaction History
 
-### 5. Transaction History
-
-The system keeps track of basic transactions such as deposits and withdrawals.
+Records and displays basic transactions performed on the account, such as deposits and withdrawals.
 
 ## ▶️ How to Run
 
-### Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/Simple-Banking-System.git
 ```
 
-### Navigate to the Project
+### 2. Navigate to the Project
 
 ```bash
 cd Simple-Banking-System
 ```
 
-### Run the Application
+### 3. Compile the Java Files
 
 ```bash
-python main.py
+javac src/*.java
 ```
 
-## 💡 Example Operations
+### 4. Run the Application
+
+```bash
+java -cp src Main
+```
+
+> If you are using IntelliJ IDEA, Eclipse, or VS Code, you can also run `Main.java` directly from the IDE.
+
+## 💻 Sample Menu
 
 ```text
-===== SIMPLE BANKING SYSTEM =====
+================================
+       SIMPLE BANKING SYSTEM
+================================
 
 1. Create Account
 2. Deposit Money
@@ -94,48 +104,39 @@ python main.py
 5. Transaction History
 6. Exit
 
-Enter your choice: 1
-
-Enter Account Holder Name: Rahul
-Enter Initial Deposit: 5000
-
-Account created successfully!
-
-Account Balance: ₹5000
+Enter your choice:
 ```
 
-## 🧠 Key Concepts Demonstrated
+## 🧠 Java Concepts Demonstrated
 
-This project demonstrates practical implementation of:
-
-* Object-Oriented Programming
 * Classes and Objects
 * Encapsulation
-* Functions and Modules
+* Constructors
+* Methods
+* Inheritance / Polymorphism (where applicable)
+* Java Collections
+* Exception Handling
 * Conditional Statements
 * Loops
-* Exception Handling
-* Data Structures
 * Input Validation
-* Transaction Processing
-* Basic File/Data Management
+* Modular Programming
 
-## 🔮 Future Improvements
+## 🔮 Future Enhancements
 
-The project can be extended with:
-
-* 🔑 Secure user authentication
-* 💳 PIN-based transactions
-* 🗄️ MySQL/PostgreSQL database integration
-* 🌐 Web-based interface
-* 📱 REST API
-* 📈 Transaction reports
-* 🧾 Digital transaction receipts
-* 🔒 Improved security and encryption
-* 👨‍💼 Admin dashboard
+* Database integration using **MySQL**
+* User authentication with PIN/password
+* Improved transaction security
+* Java Swing/JavaFX graphical interface
+* Account search and management
+* Fund transfer between accounts
+* ATM-style interface
+* Transaction receipt generation
 
 ## 👨‍💻 Author
 
 **Trishank Rahangdale**
 
-If you found this project useful, feel free to ⭐ the repository.
+---
+
+⭐ If you found this project useful, consider giving the repository a star.
+
